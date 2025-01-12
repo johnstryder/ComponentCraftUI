@@ -1,4 +1,3 @@
-import React from 'react';
 import { Search, Filter, Layout, Navigation, FormInput, Database, ChevronRight } from 'lucide-react';
 import type { Component, ComponentFilter } from '../types';
 

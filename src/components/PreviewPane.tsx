@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import  { useRef, useEffect, useState } from 'react';
 import { Maximize2, Minimize2, Eye, Edit, Save } from 'lucide-react';
 import type { Component } from '../types';
 import { CodeEditor } from './CodeEditor';
