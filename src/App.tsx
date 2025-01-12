@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ComponentBrowser } from './components/ComponentBrowser';
 import { PreviewPane } from './components/PreviewPane';
 import { Header } from './components/Header';
