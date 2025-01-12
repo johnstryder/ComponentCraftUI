@@ -27,8 +27,11 @@ WORKDIR /app
 # Copy built assets from build stage
 COPY --from=build /app/dist .
 
-# Expose port 3000 (serve's default port)
-EXPOSE 3303
+# Default to port 5173 to match docker-compose, but allow override
+ENV PORT=5173
 
-# Start serve
-CMD ["serve", "-s", ".", "-l", "3303"]
+# Expose the port
+EXPOSE ${PORT}
+
+# Start serve using the PORT environment variable
+CMD ["sh", "-c", "serve -s . -l ${PORT}"]
