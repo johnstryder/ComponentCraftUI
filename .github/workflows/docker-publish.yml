@@ -37,6 +37,8 @@ jobs:
             type=ref,event=branch
             type=sha,format=long
             latest
+          labels: |
+            org.opencontainers.image.visibility=public
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
