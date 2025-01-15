@@ -49,7 +49,7 @@ const sampleComponents: Component[] = [
     </nav>`
   }
 ];
-console.log('All env vars:', import.meta.env);
+
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, isLoading } = useAuth();
 
