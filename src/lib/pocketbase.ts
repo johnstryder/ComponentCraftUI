@@ -5,7 +5,7 @@ console.log('All Vite Env Variables:', import.meta.env);
 console.log('Attempting to use PocketBase URL:', import.meta.env.VITE_POCKETBASE_URL);
 
 // Get the PocketBase URL from environment variables with a fallback
-const pocketbaseUrl = import.meta.env.VITE_POCKETBASE_URL || 'http://pocketbase:8090';
+const pocketbaseUrl = import.meta.env.VITE_POCKETBASE_URL || 'https://pocketbase.uhmwyarn.info';
 
 if (!import.meta.env.VITE_POCKETBASE_URL) {
   console.error('PocketBase URL is not configured. Please set VITE_POCKETBASE_URL environment variable.');
